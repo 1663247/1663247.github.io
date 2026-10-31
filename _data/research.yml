@@ -1,0 +1,23 @@
+# Titles, author order, equal-contribution markers, and links come from the CV.
+# Leave unavailable links blank; the template displays only populated links.
+- title: "Criterion-Activated Preference Synthesis: Attribution-Preserving Preference Data from Explicit Standards"
+  category: publication
+  authors: "Zian Wang*, Pu Lu*, Caishuang Huang, Wenxi Wu, Meng Zhou, Xiku Du, Yang Qiao"
+  venue: "EMNLP 2026"
+  distinction: "Oral"
+  paper: "https://aclanthology.org/2026.emnlp-main.1213/"
+  code:
+
+- title: "Internalizing World Models via Self-Play Finetuning for Agentic RL"
+  category: publication
+  authors: "Shiqi Chen*, Tongyao Zhu*, Zian Wang*, Jinghan Zhang*, Kangrui Wang, Siyang Gao, Teng Xiao*, Yee Whye Teh, Junxian He, Manling Li"
+  venue: "Findings of EMNLP 2026"
+  paper: "https://arxiv.org/abs/2510.15047"
+  code:
+
+- title: "InteractiveSurvey: An LLM-based Personalized and Interactive Survey Paper Generation System"
+  category: preprint
+  authors: "Zhiyuan Wen, Jiannong Cao, Zian Wang*, Beichen Guo*, Ruosong Yang, Shuaiqi Liu"
+  venue: "arXiv, 2025"
+  paper: "https://arxiv.org/abs/2504.08762"
+  code:

@@ -1,0 +1,32 @@
+education:
+  - institution: Northwestern University
+    degree: Master of Science in Computer Science
+    dates: "Sep 2026 – Dec 2027 (expected)"
+  - institution: The Hong Kong Polytechnic University
+    degree: Bachelor of Science in Computer Science
+    dates: "Sep 2022 – Jun 2026"
+  - institution: Stanford University
+    degree: Visiting Student
+    dates: "Jun 2024 – Aug 2024"
+
+experience:
+  - institution: Tencent
+    role: Research Intern
+    dates: "Nov 2025 – Jul 2026"
+    advisor: "Mentor: Pu Lu"
+  - institution: Northwestern University
+    role: Research Assistant
+    dates: "May 2025 – Oct 2025"
+    advisor: "Supervisor: Prof. Manling Li"
+  - institution: The Hong Kong Polytechnic University
+    role: Research Assistant
+    dates: "May 2024 – Apr 2025"
+    advisor: "Supervisor: Prof. Jiannong Cao"
+
+honors:
+  - "Dean’s Honours List, 2023/24 and 2024/25"
+  - "HKSAR Government Scholarship Fund — Talent Development Scholarship"
+  - "Non-local Study Fund — Outbound Exchange Program"
+  - "Dr. Y.K. Ching Memorial Scholarship"
+  - "2nd Prize, 36th Chinese Mathematical Olympiad in Senior"
+  - "Top 0.1%, 20th American Mathematics Competitions 12"

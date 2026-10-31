@@ -3,45 +3,45 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
 # server process.
 
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
+title                    : "Zian Wang"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+name                     : &name "Zian Wang"
+description              : &description "Zian Wang — Computer Science at Northwestern University. Natural language processing, large language models, and agentic systems."   # Update this with a general description of your site, this is the default if not overridden by a page
+url                      : https://1663247.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "1663247/1663247.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  avatar           : ""
+  name             : "Zian Wang"
+  pronouns         : # example: "she/her"
+  bio              : "MS Student in Computer Science"
+  location         : "Evanston, Illinois"
+  employer         : "Northwestern University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "wangzian040318@gmail.com"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=z3-nzYsAAAAJ&hl=zh-CN&oi=sra"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            :
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           :
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
@@ -51,13 +51,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  github           : "1663247"
+  kaggle           : # Username
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          :  # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "f1663247"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -87,7 +87,7 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
 
@@ -125,7 +125,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -143,7 +143,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : og-image.png   # Social media default site image (lives in /images/)
+og_image                 :                   # Social media default site image (lives in /images/)
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -166,6 +166,46 @@ include:
   - _pages
   - files
 exclude:
+  - SITE_GUIDE.md
+  - docker-compose.yaml
+  - AGENTS.md
+  - README.md
+  - scripts
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
+  - output
+  - _posts
+  - _drafts
+  - _portfolio
+  - _publications
+  - _talks
+  - _teaching
+  - _pages/markdown.md
+  - _pages/page-archive.html
+  - _pages/cv.md
+  - _pages/talkmap.html
+  - _pages/year-archive.html
+  - _pages/tag-archive.html
+  - _pages/category-archive.html
+  - _pages/terms.md
+  - _pages/non-menu-page.md
+  - _pages/teaching.html
+  - _pages/talks.html
+  - _pages/archive-layout-with-content.md
+  - _pages/collection-archive.html
+  - _pages/publications.html
+  - _pages/sitemap.md
+  - _pages/portfolio.html
+  - files/slides1.pdf
+  - files/paper1.pdf
+  - files/paper3.pdf
+  - files/slides3.pdf
+  - files/slides2.pdf
+  - files/paper2.pdf
+  - files/bibtex1.bib
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -222,16 +262,16 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 

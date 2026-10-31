@@ -1,0 +1,16 @@
+<div class="research-list">
+  {% assign papers = site.data.research | where: "category", include.category %}
+  {% for paper in papers %}
+  <article class="paper">
+    <h3>{% if paper.paper %}<a href="{{ paper.paper | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</h3>
+    <p class="paper-authors">{{ paper.authors | escape | replace: 'Zian Wang', '<strong>Zian Wang</strong>' }}</p>
+    <p class="paper-venue"><em>{{ paper.venue | escape }}</em>{% if paper.distinction %} · <strong class="distinction">{{ paper.distinction }}</strong>{% endif %}</p>
+    {% if paper.paper or paper.code %}
+    <div class="paper-links">
+      {% if paper.paper %}<a href="{{ paper.paper | escape }}" aria-label="Paper: {{ paper.title | escape }}">[Paper]</a>{% endif %}
+      {% if paper.code %}<a href="{{ paper.code | escape }}" aria-label="Code: {{ paper.title | escape }}">[Code]</a>{% endif %}
+    </div>
+    {% endif %}
+  </article>
+  {% endfor %}
+</div>
