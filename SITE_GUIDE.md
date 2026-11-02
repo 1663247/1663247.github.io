@@ -16,7 +16,7 @@
 
 新增论文时复制 `_data/research.yml` 中的一条记录。`category` 为 `publication` 或 `preprint`；`paper`、`code` 留空时不会出现相应链接。作者顺序和 `*` 共同贡献标记需按正式论文核对。
 
-头像放入 `images/`，然后设置 `author.avatar: "你的文件名.jpg"`。当前未使用占位人物照片。
+头像放入 `images/`，然后设置 `author.avatar: "你的文件名.jpg"`。当前头像为 `images/zian-wang.jpg`，使用提供的 Photo.jpg 原图，圆形显示由 CSS 控制。
 Google Scholar 填入 `author.googlescholar`，LinkedIn 填入 `author.linkedin`（只填用户名部分）。
 
 ## 当前内容来源
@@ -47,3 +47,5 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000
 仓库保留 `.github/workflows/jekyll.yml` 的自动部署流程，推送到 `master` 时触发。首次上线时，在仓库的 Settings → Pages 中选择 GitHub Actions 作为发布来源，再检查 Actions 中的构建与部署结果。
 
 本次仅修改本地文件，没有提交、推送或改变 GitHub Pages 设置。上线后需再检查正式网址、论文外链和 Google Scholar 链接。
+
+外观以 AcademicPages 为基础，按用户提供的参考图对齐：桌面侧栏 200px、栏间距 64px、头像 175px，侧栏文字接近正文大小。现有 About Me 标题仅视觉隐藏，简介直接开篇。内容与栏目顺序不变，不增加论文配图。保持浅色主题及正常文档流页脚。

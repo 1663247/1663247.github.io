@@ -22,19 +22,14 @@ I am a master's student in Computer Science at **Northwestern University**. My r
 ## News
 {: #news-heading }
 
-- **Sep 25, 2026** — Two papers accepted to EMNLP! Our work on [preference synthesis](https://aclanthology.org/2026.emnlp-main.1213/) was selected for an **oral presentation**, and our work on [world models for agentic RL](https://arxiv.org/abs/2510.15047) was accepted to **Findings**.
+- **Sep 2026** — Two papers accepted to EMNLP! Our work on [preference synthesis](https://aclanthology.org/2026.emnlp-main.1213/) was selected for an **oral presentation**, and our work on [world models for agentic RL](https://arxiv.org/abs/2510.15047) was accepted to **Findings**.
 
 </section>
 
 <section id="publications" aria-labelledby="publications-heading">
-  <h2 id="publications-heading">Publications</h2>
+  <h2 id="publications-heading">Selected Publications</h2>
   <p class="section-note">* Equal contribution</p>
   {% include research-list.html category="publication" %}
-</section>
-
-<section id="preprints" aria-labelledby="preprints-heading">
-  <h2 id="preprints-heading">Preprints</h2>
-  {% include research-list.html category="preprint" %}
 </section>
 
 <section id="education" aria-labelledby="education-heading">

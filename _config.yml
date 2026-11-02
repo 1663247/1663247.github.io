@@ -23,7 +23,7 @@ repository               : "1663247/1663247.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : ""
+  avatar           : "zian-wang.jpg"
   name             : "Zian Wang"
   pronouns         : # example: "she/her"
   bio              : "MS Student in Computer Science"
