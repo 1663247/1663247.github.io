@@ -1,7 +1,7 @@
 ---
 layout: academic
 permalink: /
-title: "Zian Wang"
+title: "About Me"
 description: "Zian Wang is an MS student in Computer Science at Northwestern University, working on natural language processing, large language models, and agentic systems."
 redirect_from:
   - /about/

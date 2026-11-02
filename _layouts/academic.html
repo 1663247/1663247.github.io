@@ -1,45 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.url != '/' %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
-  <meta name="description" content="{{ page.description | default: site.description | escape }}">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ site.title | escape }}">
-  <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <link rel="icon" href="{{ '/images/zw.svg' | relative_url }}" type="image/svg+xml">
-  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="header-inner" aria-label="Main navigation">
-      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      <ul>{% for link in site.data.navigation.main %}<li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>{% endfor %}</ul>
-    </nav>
-  </header>
-  <div class="site-grid">
-    <aside class="profile" aria-label="Profile">
-      {% if site.author.avatar and site.author.avatar != '' %}
-      <img class="profile-photo" src="{{ site.author.avatar | prepend: '/images/' | relative_url }}" alt="{{ site.author.name }}" width="180" height="180">
-      {% endif %}
-      <h2>{{ site.author.name }}</h2>
-      <p class="profile-role">{{ site.author.bio }}</p>
-      <p class="profile-affiliation">{{ site.author.employer }}</p>
-      <ul class="profile-links">
-        {% if site.author.email %}<li><a href="mailto:{{ site.author.email }}">Email <span aria-hidden="true">↗</span></a></li>{% endif %}
-        {% if site.author.github %}<li><a href="https://github.com/{{ site.author.github }}">GitHub <span aria-hidden="true">↗</span></a></li>{% endif %}
-        {% if site.author.googlescholar %}<li><a href="{{ site.author.googlescholar | escape }}">Google Scholar <span aria-hidden="true">↗</span></a></li>{% endif %}
-        {% if site.author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a></li>{% endif %}
-      </ul>
-    </aside>
-    <main id="main" tabindex="-1">{{ content }}</main>
-  </div>
-  <footer class="site-footer">
-    <p>© {{ site.time | date: '%Y' }} {{ site.name }} · Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>.</p>
-  </footer>
-</body>
-</html>
+---
+layout: default
+author_profile: true
+---
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+  <article class="page">
+    <div class="page__inner-wrap">
+      <div class="page__content academic-content">
+        {{ content }}
+      </div>
+    </div>
+  </article>
+</div>

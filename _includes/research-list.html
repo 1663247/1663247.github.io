@@ -2,7 +2,7 @@
   {% assign papers = site.data.research | where: "category", include.category %}
   {% for paper in papers %}
   <article class="paper">
-    <h3>{% if paper.paper %}<a href="{{ paper.paper | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</h3>
+    <h3>{{ paper.title | escape }}</h3>
     <p class="paper-authors">{{ paper.authors | escape | replace: 'Zian Wang', '<strong>Zian Wang</strong>' }}</p>
     <p class="paper-venue"><em>{{ paper.venue | escape }}</em>{% if paper.distinction %} · <strong class="distinction">{{ paper.distinction }}</strong>{% endif %}</p>
     {% if paper.paper or paper.code %}

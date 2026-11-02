@@ -1,6 +1,6 @@
 # Zian Wang 学术主页维护说明
 
-网站使用 AcademicPages 仓库中的 Jekyll 构建流程，主页采用独立的简洁布局。
+网站使用 AcademicPages 仓库中的 Jekyll 构建流程，主页沿用原版 AcademicPages 的导航、侧栏、字体、图标与主题，仅对论文和经历列表添加少量样式。
 
 ## 常用修改位置
 
@@ -12,7 +12,7 @@
 | 教育、科研经历与荣誉 | `_data/profile.yml` |
 | 顶部导航 | `_data/navigation.yml` |
 | 排版与手机适配 | `assets/css/academic.css` |
-| 页面结构 | `_layouts/academic.html` |
+| 页面结构 | `_layouts/academic.html`（继承原版 `default` 布局） |
 
 新增论文时复制 `_data/research.yml` 中的一条记录。`category` 为 `publication` 或 `preprint`；`paper`、`code` 留空时不会出现相应链接。作者顺序和 `*` 共同贡献标记需按正式论文核对。
 
@@ -38,7 +38,7 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000
 
 打开 `http://127.0.0.1:4000`。修改 `_config.yml` 后需要重启服务。静态构建命令为 `bundle exec jekyll build`，输出目录是 `_site/`，不要提交该目录。
 
-主页不依赖 JavaScript、远程字体或 CDN。旧主题样式仍保留，构建时可能出现 Sass 弃用提示，不影响当前主页。
+主页使用原版主题 JavaScript 和 jQuery。Google Scholar 图标使用仓库内的 Academicons 字体，其他图标使用原版 Font Awesome。构建时可能出现 Sass 弃用提示，不影响当前主页。论文标题不带链接，使用下方的 Paper / Code 入口。
 
 ## GitHub Pages 发布
 
